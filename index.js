@@ -79,7 +79,8 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "http://192.168.1.4:3000"
+      "http://192.168.1.4:3000",
+      "https://taskora-frontend-vadc.vercel.app/"
     ],
     credentials: true,
   })
@@ -2725,7 +2726,5 @@ app.listen(PORT, async () => {
   await mongoose.connect(url);
   console.log("🚀 Server running & DB connected");
 });
-
-
 
 
