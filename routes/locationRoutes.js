@@ -81,7 +81,7 @@
 
 const express = require("express");
 require("dotenv").config();
-const localCities = require("../data/cities.json"); // ✅ fallback list
+const localCities = require("../Data/cities.json"); // ✅ fallback list
 
 const router = express.Router();
 
