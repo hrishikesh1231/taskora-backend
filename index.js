@@ -79,8 +79,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "http://192.168.1.4:3000",
-      "https://taskora-frontend-vadc.vercel.app/"
+      "https://taskora-frontend-vadc.vercel.app"
     ],
     credentials: true,
   })
@@ -101,8 +100,8 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-      secure: false,
-      sameSite: "lax",
+      secure: true,
+      sameSite: "None",
       httpOnly: true,
       maxAge: 7 * 24 * 60 * 60 * 1000,
     },
